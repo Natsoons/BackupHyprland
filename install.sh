@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Tentukan direktori penyimpanan
-BACKUP_DIR="$HOME/backup-ku"
+BACKUP_DIR="$HOME/HyprlandSessionBackup"
 CONFIG_DIR="$HOME/.config"
 
 # Daftar folder yang akan dipulihkan (bisa ditambah nanti jika ada aplikasi lain)
