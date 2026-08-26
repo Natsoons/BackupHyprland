@@ -1,0 +1,256 @@
+{
+    "appearance": {
+        "transparency": {
+            "enabled": false
+        }
+    },
+    "background": {
+        "desktopClock": {
+            "background": {
+                "blur": true,
+                "enabled": false,
+                "opacity": 0.7
+            },
+            "enabled": true,
+            "invertColors": false,
+            "position": "bottom-right",
+            "scale": 1,
+            "shadow": {
+                "blur": 0.4,
+                "enabled": true,
+                "opacity": 0.7
+            }
+        },
+        "enabled": true,
+        "visualiser": {
+            "autoHide": true,
+            "blur": false,
+            "enabled": false,
+            "rounding": 1,
+            "spacing": 1
+        },
+        "wallpaperEnabled": true
+    },
+    "bar": {
+        "activeWindow": {
+            "compact": true,
+            "inverted": false,
+            "showOnHover": true
+        },
+        "clock": {
+            "background": false,
+            "showDate": false
+        },
+        "entries": [
+            {
+                "enabled": true,
+                "id": "logo"
+            },
+            {
+                "enabled": true,
+                "id": "workspaces"
+            },
+            {
+                "enabled": true,
+                "id": "spacer"
+            },
+            {
+                "enabled": true,
+                "id": "activeWindow"
+            },
+            {
+                "enabled": true,
+                "id": "spacer"
+            },
+            {
+                "enabled": true,
+                "id": "tray"
+            },
+            {
+                "enabled": true,
+                "id": "clock"
+            },
+            {
+                "enabled": true,
+                "id": "statusIcons"
+            },
+            {
+                "enabled": true,
+                "id": "power"
+            }
+        ],
+        "excludedScreens": [
+        ],
+        "persistent": true,
+        "popouts": {
+            "activeWindow": true,
+            "tray": true
+        },
+        "scrollActions": {
+            "volume": true
+        },
+        "showOnHover": true,
+        "statusIcons": [
+            {
+                "enabled": true,
+                "id": "lockStatus"
+            },
+            {
+                "enabled": false,
+                "id": "audio"
+            },
+            {
+                "enabled": false,
+                "id": "microphone"
+            },
+            {
+                "enabled": false,
+                "id": "kbLayout"
+            },
+            {
+                "enabled": true,
+                "id": "network"
+            },
+            {
+                "enabled": true,
+                "id": "bluetooth"
+            },
+            {
+                "enabled": true,
+                "id": "battery"
+            }
+        ],
+        "tray": {
+            "background": false,
+            "compact": true,
+            "recolour": false
+        },
+        "workspaces": {
+            "activeIndicator": true,
+            "activeTrail": true,
+            "maxWindowIcons": 5,
+            "occupiedBg": true,
+            "perMonitorWorkspaces": true,
+            "showWindows": true,
+            "showWindowsOnSpecialWorkspaces": false
+        }
+    },
+    "dashboard": {
+        "enabled": true,
+        "performance": {
+            "showBattery": false
+        },
+        "showDashboard": true,
+        "showOnHover": true,
+        "showWeather": false
+    },
+    "general": {
+        "apps": {
+            "explorer": [
+                "nautilus",
+                "--new-window"
+            ],
+            "terminal": [
+                "kitty"
+            ]
+        },
+        "mediaGifSpeedAdjustment": 150,
+        "showOverFullscreen": true
+    },
+    "launcher": {
+        "enableDangerousActions": true,
+        "favouriteApps": [
+            "io.github.bluemancz.hyprmod",
+            "appimagekit_6e8ab8b901403308f5a09f2e90d0bf68-Helium",
+            "discord",
+            "steam",
+            "spotify",
+            "zen"
+        ],
+        "showOnHover": false,
+        "useFuzzy": {
+            "wallpapers": false
+        }
+    },
+    "notifs": {
+        "openExpanded": false
+    },
+    "paths": {
+        "lockNoNotifsPic": "root:/assets/dino.png",
+        "lyricsDir": "~/Music/lyrics/",
+        "mediaGif": "~/Videos/GIF/toothless_dance_meme_transparent_by_playabiyyu_dgru3fi.gif",
+        "noNotifsPic": "root:/assets/dino.png",
+        "sessionGif": "~/Videos/GIF/menhera_chan__23__by_menherachangif_devyo7o.gif",
+        "wallpaperDir": "~/Pictures/Wallpapers"
+    },
+    "services": {
+        "audioIncrement": 0.05,
+        "gpuType": "",
+        "smartScheme": true,
+        "useFahrenheit": false,
+        "useTwelveHourClock": true,
+        "visualiserBars": 40
+    },
+    "session": {
+        "commands": {
+            "hibernate": [
+                "suspendThenHibernate"
+            ],
+            "logout": [
+                "logout"
+            ],
+            "reboot": [
+                "reboot"
+            ],
+            "shutdown": [
+                "poweroff"
+            ]
+        },
+        "dragThreshold": 30,
+        "enabled": true,
+        "icons": {
+            "hibernate": "downloading",
+            "logout": "logout",
+            "reboot": "cached",
+            "shutdown": "power_settings_new"
+        },
+        "vimKeybinds": false
+    },
+    "utilities": {
+        "quickToggles": [
+            {
+                "enabled": true,
+                "id": "wifi"
+            },
+            {
+                "enabled": true,
+                "id": "bluetooth"
+            },
+            {
+                "enabled": true,
+                "id": "mic"
+            },
+            {
+                "enabled": true,
+                "id": "settings"
+            },
+            {
+                "enabled": true,
+                "id": "gameMode"
+            },
+            {
+                "enabled": true,
+                "id": "dnd"
+            },
+            {
+                "enabled": false,
+                "id": "vpn"
+            }
+        ],
+        "toasts": {
+            "fullscreen": "off",
+            "gameModeChanged": true,
+            "nowPlaying": true
+        }
+    }
+}
