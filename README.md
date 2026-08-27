@@ -26,7 +26,7 @@ fresh ~/.config/fastfetch/config.jsonc
 ```
 
 ## Penginstallan Langsung
-Pastikan sudah berada di folder yang terdapat script [install.sh]()  
+Pastikan sudah berada di folder yang terdapat script [install.sh](install.sh)  
 Jalankan command ini:
 ```sh
 ./install.sh
