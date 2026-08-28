@@ -9,16 +9,14 @@ WALL_DIR="$HOME/BackupHyprland/Wallpaper, GIF, dan lainnya"
 
 # Daftar folder yang akan dipulihkan (bisa ditambah nanti jika ada aplikasi lain)
 FOLDERS=("caelestia" "fastfetch")
-FOLDERS1=("Wallpapers" "Fetch")
-FOLDERS2=( "GIF" )
 
 echo "==========================================="
 echo "  Memulai Pemulihan Konfigurasi Sistem...  "
 echo "==========================================="
 
 # Cek apakah folder backup benar-benar ada
-if [ ! -d "$BACKUP_DIR" ] && [ ! -d "$WALL_DIR" ]; then
-    echo "⚠️ Error: Folder $BACKUP_DIR  dan Folder $WALL_DIR tidak ditemukan!"
+if [ ! -d "$BACKUP_DIR" ] || [ ! -d "$WALL_DIR" ]; then
+    echo "⚠️ Error: Folder $BACKUP_DIR  atau Folder $WALL_DIR tidak ditemukan!"
     echo "Pastikan kamu sudah mengunduhnya dari GitHub."
     exit 1
 fi
@@ -39,16 +37,18 @@ for folder in "${FOLDERS[@]}"; do
 
 done
 
-for folder1 in "${FOLDERS1[@]}"; do
-    echo "[*] Memindahkan folder $folder1"
-    
-    cp -r "$WALL_DIR/$folder1" "$PICTURES_DIR/"
-done
+ASSETS=(
+"Wallpapers:$PICTURES_DIR"
+"Fetch:$PICTURES_DIR"
+"GIF:$VIDEOS_DIR"
+)
 
-for folder2 in "${FOLDERS2[@]}"; do
-    echo "[*] Memindahkan folder $folder2"
+for item in "${ASSETS[@]}"; do
+    folder="${item%%:*}"
+    tujuan="${item##*:}"
     
-    cp -r "$WALL_DIR/$folder2" "$VIDEOS_DIR/"
+    echo "[*] Memindahkan folder $folder ke $tujuan..."
+    cp -r "$WALL_DIR/$folder/" "$tujuan"
 done
 
 echo "==========================================="
