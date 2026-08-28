@@ -1,11 +1,11 @@
 #!/bin/bash
 
 # Tentukan direktori penyimpanan
-BACKUP_DIR="$HOME/HyprlandSessionBackup"
+BACKUP_DIR="$HOME/BackupHyprland"
 CONFIG_DIR="$HOME/.config"
 
 # Daftar folder yang akan dipulihkan (bisa ditambah nanti jika ada aplikasi lain)
-FOLDERS=("hypr" "caelestia" "fastfetch")
+FOLDERS=("caelestia" "fastfetch")
 
 echo "==========================================="
 echo "  Memulai Pemulihan Konfigurasi Sistem...  "
