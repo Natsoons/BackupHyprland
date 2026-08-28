@@ -2,7 +2,7 @@
 
 > [!NOTE]
 > Pastikan di clone dulu repo ini, dan harus sudah terinstall caelestianya!!!  
-> Klik [disini](https://github.com/caelestia-dots/shell) dan ikutin panduan installnya.
+> Klik [disini](https://github.com/caelestia-dots/shell) untuk menginstall caelestianya dan ikutin panduan installnya.
 
 ## Caelestia Folder
 Untuk edit keybinds, default app, UI, dsb 
@@ -25,12 +25,13 @@ Untuk edit logo atau module dari command fish dan fastfetch
 fresh ~/.config/fastfetch/config.jsonc
 ```
 
-## Penginstallan Langsung
+## Penginstallan otomatis Langsung
 Pastikan sudah berada di folder yang terdapat script [install.sh](install.sh)  
 Jalankan command ini:
 ```sh
 ./install.sh
 ```
+ini yang mengintall folder caelestia dan fastfetch saja
 
 ## Hypr Folder
 Kurang tau
