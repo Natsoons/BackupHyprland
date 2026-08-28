@@ -28,11 +28,6 @@ for folder in "${FOLDERS[@]}"; do
         rm -rf "$CONFIG_DIR/$folder"
     fi
 
-    # Buat symlink baru dari brankas ke sistem
-    echo "    - Memasang symlink baru..."
-    ln -s "$BACKUP_DIR/$folder" "$CONFIG_DIR/$folder"
-    
-    echo "    - Berhasil! ✔️"
 done
 
 echo "==========================================="

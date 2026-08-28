@@ -5,7 +5,6 @@ return {
     fileExplorer = "nautilus",
     
     -- Misc --
-    cursorTheme = "McMojave-cursors",
     cursorSize = "32",
     
     ------------------
