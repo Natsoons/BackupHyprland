@@ -27,6 +27,10 @@ for folder in "${FOLDERS[@]}"; do
         echo "    - Menghapus folder/pengaturan lama yang rusak..."
         rm -rf "$CONFIG_DIR/$folder"
     fi
+    
+    # Menyalin folder fisik dari repo hasil clone ke dalam sistem
+    echo "    + Mengganti folder dengan yang baru..."
+    cp -r "$BACKUP_DIR/$folder"
 
 done
 
