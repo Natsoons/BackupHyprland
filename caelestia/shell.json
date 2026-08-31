@@ -193,6 +193,7 @@
         ],
         "showOnHover": false,
         "useFuzzy": {
+            "apps": false,
             "wallpapers": false
         }
     },
@@ -239,6 +240,10 @@
             "shutdown": "power_settings_new"
         },
         "vimKeybinds": false
+    },
+    "sidebar": {
+        "dragThreshold": 80,
+        "enabled": true
     },
     "utilities": {
         "quickToggles": [
